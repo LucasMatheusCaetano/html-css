@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!--Isso aqui indica um documento em HTML5-->
+<html lang="pt-br"> <!--Aqui identifica em que língua está seu site-->
+<head> <!--Essa é a área de configuração do site-->
+    <meta charset="UTF-8"><!--Isso aqui adiciona palavras com caracteres especiais como palavras com acentos e essas coisas-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--Use a tag link:favicon nomeie da maneira que você está vendo aí para facilitar-->
+    <title>Lukao Mil Grau</title> <!--Aqui é o nome que fica na aba do seu navegador-->
+    <style> mark {background-color:red; </style>
+</head>
+<body> <!--Aqui fica o conteúdo do seu site-->
+    <h1>Lukao Mil Grau</h1> <!--Título de nível 1-->
+    <hr><!--Linha horizontal-->
+    <h2>Meu grande projeto</h2> <!--Título de nível 2-->
+    <p>O meu grande projeto para esse site é ser uma espécie de diário onde relato e produzo conteudo de maneira unificada para não perder engajamento nem o foco.</p> <!--Paragrafo-->
+    <br><!--Quebra de linha. Nunca dê vários br para dar mais espaço entre os paragrafos-->
+    <p>Uma coisa indissociavel da vida do ser humano é o entretenimento e sinto que devo compartilhar de alguma formas as minhas expêriencias e opiniões sobre aquilo que está ao meu redor. <br> No entretenimento eu estou muito mais próximo de assistir filmes atualmente, mas já fui um grande jogador. <br> Nos games o meu console favorito é o Super Nintendo e seus incriveis jogos.</p>
+<!--1500px é o tamanho máximo para se usar em um site, lembre-se de que quanto mais leve o site melhor, guarde suas imagens originais para caso você precise reajustar o tamanho delas para colocar uma imagem use a tag img src é o local onde está a sua imagem e alt é a descrição da imagem, o que melhor descreve a imagem. Use ctrl+espaço para escolher a imagem com mais facilidade. Também é possível colocar imagens de outros servidores no seu site.-->
+<!--Hierarquia de títulos é uma videoaula bastante boa para entender o assunto. H1 até H6-->
+<!--Semantica é importante no HTML5, pois ele é focado em significado e o CSS é a forma. HTML5 é sobre conteudo e CSS sobre design e formas www.w3c.com site com tags desatualizadas.-->
+<h1>Principais formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Nesta frase tenho um <strong>termo em destaque</strong>  usando a tag STRONG</p> <!--Em oposição a tag b que é uma tag que só tem forma, mas nenhum sentido. A tag STRONG tem sentido dentro do HTML5-->
+    <P>Nesta frase, temos um <i>termo em itálico</i> usando a tag i</P> <!--Ctrl=Shift+P ou botão direito do mouse tag i também não tem semântica.-->
+    <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag em</p> <!--Tag é semântica.-->
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark style=background-color:aquamarine>um texto marcado </mark>
+        usando a tag MARK</p> <!--Depois da tag de HTML mark aqui, você verá uma forma de mudar a cor do marca-texto que é função do CSS. Mas se você colocar ela somente aqui, ela irá mudar apenas essa marcação, se você colocar ela no cabeçalho (ou seja head) você mudará todas desta página. Veja o cabeçalho-->
+<p><mark>Outro texto marcado aqui</mark></p>
+<p>Estamos criando um texto grande e um <small>texto pequeno</small> nesse parágrafo.</p><!--Texto com letras pequenas são semânticos usa-se a tag small, já para a o texto grande não existe algo a ser feito no HTML5, apenas em CSS.-->
+<p>Podemos marcar <del>um texto excluído</del> para indicar que ele deve ser lido, mas não considerado</p> <!--Tag del -->
+<p>Podemos marcar <ins>um texto inserido </ins>para dar uma ênfase e indicar que ele foi adicionado depois.</p> <!--Semântica. U é não semãntica.-->
+<h2>Texto sobrescrito</h2>
+<p>Para inserir coisas do tipo x <sup>20</sup>+3</p>
+<h2>Texto subscrito</h2>
+<p>Para inserir coisas do tipo H <sub>2</sub>O</p>
+
+<!--Exercicio 009-->
+
+<h1>Outras formatações/Pré-formatação</h1>
+<h2>Código-fonte</h2>
+<p>O comando document.getElementById('teste') é escrito em linguagem JavaScript.</p>
+<!--Veja a diferença entre os dois, com e sem a tag code-->
+<p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+<pre> <!--Agora isso aqui ajuda na pré-formatação.-->
+    <code> 
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+        print(f'O número {num} é PAR')
+        else:
+        print(f'O número {num} é ÍMPAR)
+        print ('Fim do programa')
+        </code>
+</pre>
+<h2>Citações</h2>
+<p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p> <!--Tag q semântica.-->
+Sherlock Holmes estava certo quando disse para o doutor Watson quando disse:
+<blockquote cite="https://www.pensador.com/frases_de_sherlock_holmes/">Você vê, mas não observa.</blockquote><!--Tag blockquote e o paramentro cite que mostra de onde veio está frase.-->
+<h2>Abreviações</h2>
+<p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p><!--abbr é para criar legendas sobre siglas.-->
+<h1>Trabalhando com lista</h1>
+<h2>Listas ordenadas</h2>
+<ol><!--Listas ordenadas é com essa tag, você ainda pode colocar o paramentro type para mudar a forma de organização por letras, números romanos e start para começar onde você quiser. type sendo igual a (1, A, a, I, i)-->
+    <li>Acordar</li><!--E para ser complementada tem que colocar dentro dessa tag-->
+    <li>Tomar café</li>
+    <li>Escovar dentes</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+<ul><!--Listas não ordenadas com os type circle disc e square.-->
+    <li>Pão</li>
+    <li>Leite</li>
+    <li>Manteiga</li>
+    <li>Milho</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+        <li>Clipper</li>
+        <li>Visual basic</li>
+        <li>Fortran</li>
+        <li>Delphin</li>
+            </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+            </ol>
+        </ol>
+        <h2>Meus jogos favoritos</h2>
+        <ol><!--Lista dentro da lista, preciso treinar isso.-->
+            <li>Super Nintendo</li>
+            <ul>
+                <li>Super Mario Bros.</li>
+                <li>Donkey Kong Country</li>
+                <li>Chrono Tigger</li>
+                </ul>
+             <li>PlayStation</li>
+             <ul>
+                <li>God of War 2</li>
+                <li>The Godfather</li>
+                <li>Steambot Chronicles</li>
+            </ul>
+        </ol>
+        <h2>Lista de definições</h2>
+        <dt>HTML</dt><!--Lista de definições dt termo dd definição.-->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a acriação de interatividade de um site.</dd>
+        <h1>Usando links externos</h1>
+        <p>Meu canal no <a href="https://www.youtube.com/channel/UCFvMr6gzQNO9hKTG2XMXBmA" target="_blank" rel="external">Youtube</a></p>
+        <!--target"_blank" janela em branco rel"external" para sites que são de terceiros-->
+        <h2>Usando links internos</h2>
+        <p>Está é a primeira página do site. Se você quiser, pode acessar também a minha <a href="page2.html" rel="prev">Segunda página.</a></p> <!--rel é importante para dar valor. rel=nofollow para links não confiavéis.-->
+        <p>Você também pode acessar a nossa <a href="Noticias/page3.html">página de noticias</a>.</p>
+
+</body>
+</html>
