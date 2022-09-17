@@ -7,18 +7,29 @@
     <title>Cordel Moderno</title>
 
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
         header {
             background-color: black;
             font-size: 50px;
             color: white;
-            padding: 0px;
-            margin: 0px;
+            padding: auto;
         }
         section.background1 {
             background: transparent url(imagens/background001.jpg) right center fixed no-repeat;
             background-size: cover;
             height: 500px;
             width: auto;
+
         }
         
         section.background2 {
@@ -26,16 +37,40 @@
             background-size: cover;
             height: 500px;
             width: auto;
+            margin-top: 100px;
         }
         
+        div {
+            margin: 50px;
+        }
+
         div.fundo {
-            background-color: rgba(0, 0, 0, 0.5);
+
             color: white;
+            position: absolute;
+        
+        }
+
+        h1 {
+            font-family: 'Passion One', 'Work Sans', sans-serif;
+            text-align: center;
+        }
+
+        p.header {
+            text-align: center;
+            width: auto;
+            height: auto;
         }
 
         p {
             width: 30%;
             height: 15%;
+            font-family: 'Sriracha', 'Work Sans', sans-serif;
+
+        }
+
+        p.fundo {
+            background-color: rgba(0, 0, 0, 0.5);
         }
     </style>
 
@@ -45,7 +80,7 @@
         <h1>
             Cordel Moderno
         </h1>
-        <p>
+        <p class="header">
             por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank" rel="external">Milton Duarte</a>
         </p>
     </header>
@@ -64,7 +99,7 @@
 
 <section class="background1">
     <div class="fundo">
-        <p>
+        <p class="fundo">
             Não é mais como era antes
             É tudo abreviado
             "Você" só tem duas letras
@@ -78,7 +113,7 @@
 
 <section class="background2">
     <div class="fundo">
-        <p>
+        <p class="fundo">
             Arroba agora não pesa
             É parte de um endereço
             Ponto final nem se usa
