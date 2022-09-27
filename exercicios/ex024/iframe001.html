@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+<!-- Quando em configurações diferentes entre as CSS e o HTML, fica valendo o CSS-->
+    <style>
+        iframe {
+            height: 50vw;
+            width: 75vw;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, sapiente sequi nam soluta doloremque rerum ad ullam illo eos.
+        <!-- Tamanho padrão de um iframe é de 300x1500-->
+        <iframe src="https://lucasmatheuscaetano.github.io/html-css/exercicios/d010/android.html#" frameborder="1" height="500px" width="500px" scrolling="no"> <!--scrolling serve para definir se a página dentro do iframe terá a barra de rolagem ou não-->
+            <!--frameborder usado com parametros 0 e >1 para definir a borda do iframe-->
+            <a href="https://lucasmatheuscaetano.github.io/html-css/exercicios/d010/android.html#"></a> <!--Use um link no caso do navegador não aceitar o iframe-->
+        </iframe>
+
+        Illo nostrum est similique numquam ad officiis iste accusamus amet necessitatibus!
+    </p>
+
+    <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
+</body>
+</html>
