@@ -8,9 +8,17 @@
 </head>
 <body>
     <form action="cadastro.php" method="post" autocomplete="on">
+
+        <!--Metódo get suporta apenas 3mb de dados a serem enviados, para enviar mais informação utilize o metódo post-->
+
         <p>
             <label for="icor">Cor: </label>
             <input type="color" name="cor" id="icor" value="#ff0000">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="0" max="5" value="0" >
         </p>
 
         <p>
